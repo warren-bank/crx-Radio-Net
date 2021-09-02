@@ -1,0 +1,97 @@
+https://www.radio.net/s/msnbc
+    <script suppressHydrationWarning>
+        var require = {
+            config: {
+                'components/station/stationService': {
+                    station: {
+                        "id": "msnbc",
+                        "name": "MSNBC News",
+                        "lastModified": 1603808641,
+                        "logo44x44": "https://d3kle7qwymxpcy.cloudfront.net/images/broadcasts/2d/18/100612/1/c44.png",
+                        "logo100x100": "https://d3kle7qwymxpcy.cloudfront.net/images/broadcasts/2d/18/100612/1/c100.png",
+                        "logo175x175": "https://d3kle7qwymxpcy.cloudfront.net/images/broadcasts/2d/18/100612/1/c175.png",
+                        "logo300x300": "https://d3kle7qwymxpcy.cloudfront.net/images/broadcasts/2d/18/100612/1/c300.png",
+                        "logo630x630": "",
+                        "logo1200x1200": "",
+                        "playable": true,
+                        "streams": [{
+    >>>                     "url": "https://wrau.streamguys1.com/msnbc-free",
+    >>>                     "contentFormat": "audio/mpeg"
+                        }],
+                        "city": "New York City",
+                        "country": "USA",
+                        "topics": ["News"],
+                        "genres": ["News-Talk"],
+                        "type": "STATION",
+                        "description": "MSNBC is an American cable and satellite television network that provides news coverage and political commentary from NBC News on current events.",
+                        "homepageUrl": "https://www.msnbc.com/",
+                        "adParams": "advertising=true&genres=Talk&languages=English&st_city=New York City&st_cont=North America&st_country=USA&st_region=New York&station=msnbc&topics=News&type=radio_station",
+                        "hideReferer": false,
+                        "continent": "North America",
+                        "languages": ["English"],
+                        "region": "New York",
+                        "topicTags": [{
+                            "systemName": "News",
+                            "name": "News",
+                            "slug": "news"
+                        }],
+                        "genreTags": [{
+                            "systemName": "News-Talk",
+                            "name": "Talk",
+                            "slug": "news-talk"
+                        }],
+                        "cityTag": {
+                            "systemName": "New York City",
+                            "name": "New York City",
+                            "slug": "new-york-city"
+                        },
+                        "countryTag": {
+                            "systemName": "USA",
+                            "name": "USA",
+                            "slug": "usa"
+                        },
+                        "shortDescription": "MSNBC is an American cable and satellite television network that provides news coverage and political commentary from NBC News on current events.",
+                        "enabled": true,
+                        "seoRelevantIn": ["nl_NL", "de_DE", "da_DK", "pl_PL", "es_CO", "en_CA", "es_ES", "pt_BR", "en_IE", "en_AU", "en_NZ", "fr_FR", "pt_PT", "sv_SE", "it_IT", "en_GB", "en_ZA", "de_AT", "en_US", "es_MX"],
+                        "stationRating": {
+                            "subdomain": "msnbc",
+                            "rating": 0,
+                            "count": 0
+                        }
+                    },
+                    nowPlayingPollingInterval: 60000
+                },
+                'components/player/playerService': {
+                    playerAPIiframeSrc: 'https://www.mytimm.de/iFramePlayerAPI.html'
+                },
+                'common/constants': {
+                    mandateDomain: 'radio.net',
+                    tenant: {
+                        webDomain: 'radio.net'
+                    },
+                    countryCode: 'en',
+                    localeCode: 'en_US',
+                    urlProtocol: 'https://',
+                    reloadAdsOnStop: 'true',
+                    environment: window.__ENVIRONMENT || {},
+                    isStationPage: true
+                }
+            }
+
+        };
+
+        //We need this for our Tagmanager Stuff to Work
+        window.requirejs = {
+            s: {
+                contexts: {
+                    _: {
+                        config: require
+                    }
+                }
+            }
+        };
+    </script>
+
+notes:
+  * 'Referer' header is not required
+  * most audio players would find it helpful to append hash to URL: #audio.mp3
